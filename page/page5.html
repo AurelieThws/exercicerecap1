@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<title>De Coninck Contact</title>
+		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<meta http-equiv="cache-control" content="no-cache" />
+	</head>
+	<body>
+		<header>
+			<center>
+				<a href="../index.html"><img src="../images/imagebanner.jpg" width=50%></a>
+			</center>
+		</header>
+		<main>
+			<nav>
+				<ul class="menu" >
+					<li><a href="page2.html">Nouveautés</a></li>
+					<li><a href="page3.html">Nos classiques</a></li>
+					<li><a href="page4.html">Servir le vin</a></li>
+					<li><a href="page5.html">Contact</a></li>
+					<li><a href="page6.html">Plan d'accès</a></li>
+				</ul>
+			</nav>
+			<section class="block">
+				<h1 class="titrelettrine">Contact</h1>
+				<form method="post" action="traitement.php">
+					<fieldset>
+						<legend>Coordonnées</legend>
+						<label for="nom">Nom</label>:<input type="text" name="nom" id="nom" placeholder="Champs obligatoire" class="red" tabindex="1" required autofocus/><img id="imageasterisk" src="../images/asterisk.png" title="Ce champs est obligatoire"><br>
+						<label for="prenom">Prénom</label>:<input type="text" name="prenom" id="prenom" placeholder="Champs obligatoire" class="red" tabindex="2" required/><img id="imageasterisk" src="../images/asterisk.png" title="Ce champs est obligatoire"><br>
+						<label for="telephone">Téléphone</label>:<input type="phone" name="telephone" id="telephone" placeholder="Champs obligatoire" class="red" tabindex="2" required/><img id="imageasterisk" src="../images/asterisk.png" title="Ce champs est obligatoire"><br>
+						<label for="email">E-mail</label>:<input type="email" name="email" id="email" placeholder="mail@domain.com" class="red" tabindex="3" required/><img id="imageasterisk" src="../images/asterisk.png" title="Ce champs est obligatoire"><br> 
+					</fieldset>
+					<fieldset>
+						<legend>Votre question</legend>
+						<textarea name="question" rows=4 cols=40></textarea>
+					</fieldset>
+					<input id="bouton" type="submit" value="ENVOYER"/>
+				</form>
+			</section>
+		</main>
+	</body>
+
+</html>
